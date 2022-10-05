@@ -42,3 +42,24 @@ if (number/100 == 0)
 {
     Console.WriteLine($"В числе {number} третьей цифры нет ");
 }
+
+// Задача 15. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+Console.WriteLine("--------------Задача №15.--------------");
+Console.Write("Введите номер дня недели: ");
+int numberWeekDay = int.Parse(Console.ReadLine()!);
+switch (numberWeekDay)
+{
+    case 1: Console.WriteLine("Понедельник"); break;
+    case 2: Console.WriteLine("Вторник"); break;
+    case 3: Console.WriteLine("Среда"); break;
+    case 4: Console.WriteLine("Четверг"); break;
+    case 5: Console.WriteLine("Пятница"); break;
+    case 6: Console.WriteLine("Суббота"); break;
+    case 7: Console.WriteLine("Воскресенье"); break;
+    default: Console.WriteLine("Такого дня недели не существует"); break;
+}
+
+if (numberWeekDay == 6 || numberWeekDay == 7)
+{
+    Console.WriteLine(" - это выходной день");
+}
